@@ -18,4 +18,15 @@ class MonController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/utilisateur", name="utilisateur")
+     */
+    public function utilisateur(): Response
+    {
+        return $this->render('mon/utilisateur.html.twig', [
+            'controller_name' => 'MonController',
+        ]);
+    }
+
 }
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+        {% endblock %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+        {% block javascripts %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}
+
+
+<nav class = "navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Navbar </font> </font> </a>
+  <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "# navbarColor01" aria-controls = "navbarColor01" aria-extended = "false" aria-label = "Basculer la navigation ">
+    <span class = "navbar-toggler-icon"> </span>
+  </button>
+
+  <div class = "collapse navbar-collapse" id = "navbarColor01">
+    <ul class = "navbar-nav mr-auto">
+      <li class = "nav-item active">
+        <a class="nav-link" href="#"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Accueil
+          </font> </font> <span class = "sr-only"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> (actuel) </ font > </font> </span>
+        </a>
+      </li>
+      <li class = "nav-item">
+        <a class="nav-link" href="#"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Fonctionnalités </font> </font> </a>
+      </li>
+      <li class = "nav-item">
+        <a class="nav-link" href="#"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Tarification </font> </font> </a>
+      </li>
+    </ul>
+    <form class = "form-inline my-2 my-lg-0">
+      <input class = "form-control mr-sm-2" type = "text" placeholder = "Chercher">
+      <button class = "btn btn-secondaire my-2 my-sm-0" type = "submit"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Chercher </font> </font> </button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<form>
+  <fieldset>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Légende </font> </font> </legend>
+
+    <div class = "form-group">
+      <label for = "exampleInputEmail1"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Adresse e-mail </font> </font> </label>
+      <input type = "email" class = "form-control" id = "exampleInputEmail1" aria-describedby = "emailHelp" placeholder = "Entrez l'email">
+      <small id = "emailHelp" class = "form-text text-muted"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Nous ne partagerons jamais votre e -mail avec qui que ce soit. </font> </font> </small>
+    </div>
+
+    <div class = "form-group">
+      <label for = "exampleInputEmail1"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Pseudo </font> </font> </label>
+      <input type = "" class = "form-control" id = "pseudo" aria-describedby = "pseudo" placeholder = "Entrez pseudo">
+    </div>
+
+    <div class = "form-group">
+      <label for = "exampleInputPassword1"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Mot de passe </font> </font> </label>
+      <input type = "password" class = "form-control" id = "exampleInputPassword1" placeholder = "Mot de passe">
+    </div>
+
+        <div class = "form-group">
+      <label for = "exampleInputPassword1"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Confirmez mot de passe </font> </font> </label>
+      <input type = "password" class = "form-control" id = "exampleInputPassword1" placeholder = "Mot de passe">
+    </div>
+
+</form>
+        {% endblock %}
+    </body>
+</html>
